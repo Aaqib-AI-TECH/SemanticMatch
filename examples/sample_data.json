@@ -1,0 +1,32 @@
+{
+  "description": "Example item lists for demoing SemanticMatch: PHQ-9 (depression screening) vs. a paraphrased/GAD-7-mixed instrument, illustrating conceptually overlapping but differently-worded questionnaire items.",
+  "instrument_a": {
+    "name": "PHQ-9 (Patient Health Questionnaire)",
+    "items": [
+      "Little interest or pleasure in doing things",
+      "Feeling down, depressed, or hopeless",
+      "Trouble falling or staying asleep, or sleeping too much",
+      "Feeling tired or having little energy",
+      "Poor appetite or overeating",
+      "Feeling bad about yourself, or that you are a failure",
+      "Trouble concentrating on things, such as reading or watching television",
+      "Moving or speaking so slowly that other people could have noticed",
+      "Thoughts that you would be better off dead or of hurting yourself"
+    ]
+  },
+  "instrument_b": {
+    "name": "Mixed depression/anxiety item pool (paraphrased)",
+    "items": [
+      "Anhedonia / loss of interest in activities",
+      "Depressed mood most of the day",
+      "Insomnia or hypersomnia nearly every day",
+      "Fatigue or loss of energy",
+      "Feeling nervous, anxious, or on edge",
+      "Not being able to stop or control worrying",
+      "Feelings of worthlessness or excessive guilt",
+      "Diminished ability to think or concentrate",
+      "Psychomotor agitation or retardation observable by others"
+    ]
+  },
+  "usage": "POST these two 'items' arrays as items_a and items_b to /api/match to see how closely each PHQ-9 item aligns with an item from the paraphrased instrument."
+}
